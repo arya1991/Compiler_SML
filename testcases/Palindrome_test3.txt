@@ -1,0 +1,21 @@
+program Palindrome :: 
+var a,b,c,d,e,f : int ;
+{ 
+read a ;
+f := a ;
+b := 0 ;
+while a <> 0 do
+{ 
+d := a / 10 ;
+e := a - d*10 ;
+c := b*10 + e ;
+b := c ;
+a := d ;
+}
+endwh ;
+if f <> b then
+{write 1;}
+else 
+{write 0;}
+endif;
+}

@@ -1,0 +1,11 @@
+program Fibonacci :: 
+var a,b,c : int ;
+{ 
+c := 0 ;
+a := 0 ;
+b := 1 ;
+while (a < 1000) do
+{ write a ; c := a ; a := b ; b := b+c; }
+endwh ;
+}
+

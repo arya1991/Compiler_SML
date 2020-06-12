@@ -1,0 +1,21 @@
+program Prime :: 
+var a,b,c,d,e,f : int ;
+{ 
+read a ;
+b := a/2 ;
+c := 2 ;
+d := 1 ;
+while c < b do
+{ 
+e := a%c;
+if e = 0 then { d:=0 ;  c := c+1; }
+else { c := c+1 ;}
+endif;
+}
+endwh ;
+if d = 0 then
+{write 0;}
+else 
+{write 1;}
+endif;
+}

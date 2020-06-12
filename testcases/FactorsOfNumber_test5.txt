@@ -1,0 +1,15 @@
+program Factors :: 
+var a,b,c,d,e,f : int ;
+{ 
+read a ;
+b := a ;
+c := 2 ;
+while c < b do
+{ 
+e := a%c;
+if e = 0 then { write c ; c:=c+1; }
+else { c := c+1 ;}
+endif;
+}
+endwh ;
+}

@@ -1,0 +1,17 @@
+program GCD :: 
+var a,b,c : int ;
+{ 
+read a ;
+read b ;
+while a <> b do
+{ 
+if a > b then 
+{ c := b; b:= a-c; a:=c ;}
+else 
+{c := a ; a := b-c ; b:=c ; }
+endif;
+}
+endwh ;
+write a;
+}
+
